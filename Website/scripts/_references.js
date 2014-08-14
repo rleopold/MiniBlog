@@ -3,3 +3,7 @@
 /// <reference path="bootstrap-wysiwyg.js" />
 /// <reference path="comments.js" />
 /// <reference path="jquery-2.0.2.js" />
+/// <reference path="shBrushCSharp.js" />
+/// <reference path="shBrushJScript.js" />
+/// <reference path="shBrushSql.js" />
+/// <reference path="shCore.js" />

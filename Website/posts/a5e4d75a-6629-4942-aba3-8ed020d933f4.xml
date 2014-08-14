@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <post>
-  <title>Test 1</title>
+  <title>Testing out Miniblog</title>
   <slug>test-1</slug>
   <author></author>
   <pubDate>2014-06-02 09:58:00</pubDate>
-  <lastModified>2014-06-02 09:58:21</lastModified>
-  <excerpt>this is a test</excerpt>
-  <content>&lt;p&gt;Testing the excerpt from WLW&lt;/p&gt;</content>
+  <lastModified>2014-08-13 22:12:17</lastModified>
+  <excerpt>Testing out another blog engine</excerpt>
+  <content>&lt;p&gt;This is really great! Seems like a tool for developers by developers...maybe I'll write a blog about it LOL!&lt;/p&gt;</content>
   <ispublished>true</ispublished>
   <categories>
     <category>Best Practices</category>
-    <category>WLW</category>
+    <category> WLW</category>
+    <category> Blogging</category>
   </categories>
   <comments></comments>
 </post>
