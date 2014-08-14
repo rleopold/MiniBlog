@@ -15,7 +15,9 @@
     <link type="application/atom+xml" rel="alternate" title="@Blog.Title" href="~/feed/atom/" />
 
     <link rel="stylesheet" href="@Blog.FingerPrint("/css/bootstrap-3.0.0.css", "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")" />
+
     <link rel="stylesheet" href="@Blog.FingerPrint("/themes/" + Blog.Theme + "/site.css")" />
+    
     <link href="~/css/shThemeDefault.css" rel="stylesheet" />
     <link href="~/css/shCore.css" rel="stylesheet" />
     <link rel="shortcut icon" href="@Blog.FingerPrint("/favicon.ico")" type="image/x-icon" />
@@ -117,9 +119,12 @@
         <aside role="complementary" class="col-md-3">
             <section>
                 <img src="https://bhnet.blob.core.windows.net/images/e8d5c162-0280-4ae9-8eff-e5a34186d173glasshole.png" class="img-rounded" />
-                <h3>About me</h3>
+                <h3>Richard J. Leopold</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper.
+                    Richard wrote his first piece of software in 1986 on his father's Apple IIe, and has never looked back. His philosophy on software is that it is more art than science, and that the best solutions don't come from books about design patterns and such, but the natural creative process backed up by technical expertise and experience.
+                </p>
+                <p>
+                    Richard has 15 years of professional experience and studied music, math and computer science while completing a BBA in Information Systems from the Jerry S. Rawls College of Business Administration at Texas Tech University
                 </p>
             </section>
         </aside>
@@ -135,7 +140,7 @@
         }
         <span>
             Copyright &copy; @DateTime.Now.Year
-            <a href="/" itemprop="url name">Richard J. Leopold</a>
+            <a href="mailto:rjleopold@gmail.com" itemprop="url name">Richard J. Leopold</a>
         </span>
     </footer>
 
@@ -155,6 +160,20 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="~/scripts/shCore.js"></script>
 <script src="~/scripts/shBrushCSharp.js"></script>
+
+<!--google analytics-->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-53804324-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
 @helper AdminCss()
 {
