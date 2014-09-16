@@ -1,0 +1,205 @@
+{
+    "basics": {
+        "name": "Richard J. Leopold",
+        "label": "Developer / Architect",
+        "picture": "https://bhnet.blob.core.windows.net/images/e8d5c162-0280-4ae9-8eff-e5a34186d173glasshole.png",
+        "email": "rjleopold@gmail.com",
+        "phone": "(214) 558-4123",
+        "website": "http://4rjl.net",
+        "summary": "I wrote my first piece of software in 1986 on my father's Apple IIe, and I have never looked back. My philosophy on software is that it is more art than science, and that the best solutions don't come from books about design patterns and such, but the natural creative process backed up by technical expertise and experience. I am a problem solver by nature, a leader by example, and an eager student.",
+        "location": {
+            "address": "2703 Gaston Ave",
+            "postalCode": "TX 75226",
+            "city": "Dallas",
+            "countryCode": "US",
+            "region": "Texas"
+        },
+        "profiles": [
+            {
+                "network": "Twitter",
+                "username": "rjleopold",
+                "url": "https://twitter.com/rjleopold"
+            },
+            {
+                "network": "GitHub",
+                "username": "rleopold",
+                "url": "https://github.com/rleopold"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "BizHeard",
+            "position": "Founder / Chief Architect / Principal Consultant",
+            "website": "http://bizheard.net",
+            "startDate": "2013-04-01",
+            "endDate": "2014-09-15",
+            "summary": "Wearing all the hats at a bootstrapping startup!",
+            "highlights": [
+                "Designed and developed the web and mobile backend for BizHeard's product",
+                "Provided consulting services for BizHeard's clients",
+                "vPromos - Designed and developed software for a SaaS customer loyalty application"
+            ]
+        },
+        {
+            "company": "Powerhouse Software Inc.",
+            "position": "President / Principal Consultant",
+            "website": "http://powerhousesoftware.com",
+            "startDate": "2007-04-01",
+            "endDate": "2014-09-15",
+            "summary": "Providing .NET Consulting services to clients",
+            "highlights": [
+                "Horizontal Solutions International - Created cloud-based application for managing geological data",
+                "Lateral Software Services - Created cloud-based geosteering application for lateral drilling control",
+                "Gydex - Helped to design and build out a real-time operations center for petroleum drilling and production activity"
+            ]
+        },
+        {
+            "company": "Brierley and Partners",
+            "position": "Producer / Analyst / Developer",
+            "website": "http://brierley.net",
+            "startDate": "2004-05-01",
+            "endDate": "2007-04-01",
+            "summary": "Creating content deliverables, analysis and development for B+P's largest clients",
+            "highlights": [
+                "Sony Rewards - Designed and developed the customer service application for the Sony Rewards and Sony Card programs",
+                "Ann Taylor Loft - Created dynamic email content for members based upon CRM data for customers",
+                "Nokia - Provided QA for web and email deliverables"
+            ]
+        },
+        {
+            "company": "Database Designs LLC",
+            "position": "Java Developer",
+            "website": "",
+            "startDate": "1999-05-01",
+            "endDate": "2000-05-01",
+            "summary": "Created online truck brokerage software",
+            "highlights": [
+                "Used java servlets to implement a web-based communication layer with desktop app"
+            ]
+        }
+    ],
+    "volunteer": [
+
+    ],
+    "awards": [
+
+    ],
+    "publications": [
+
+    ],
+
+    "education": [
+        {
+            "institution": "Texas Tech University",
+            "area": "Computer Science / Information Technology",
+            "studyType": "Bachelor",
+            "startDate": "1998-09-01",
+            "endDate": "2002-12-01",
+            "gpa": "3.6",
+            "courses": [
+                "Music",
+                "Math",
+                "Computer Science",
+                "Information Technology"
+            ]
+        }
+    ],
+
+
+    "skills": [
+        {
+            "name": ".NET",
+            "level": "Master",
+            "keywords": [
+                "ASP.NET",
+                "C#",
+                "Visual Studio"
+            ]
+        },
+        {
+            "name": "Web",
+            "level": "Master",
+            "keywords": [
+                "AngularJS",
+                "Javascript",
+                "HTML5",
+                "bootstrap"
+            ]
+        },
+        {
+            "name": "Data",
+            "level": "Master",
+            "keywords": [
+                "SQL Server",
+                "Entity Framework",
+                "nHiberate",
+                "MongoDb",
+                "Azure Tables",
+                "Data Storage Architecture",
+                "DocumentDb"
+            ]
+        },
+        {
+            "name": "Other Languages / Platforms",
+            "level": "Journeyman",
+            "keywords": [
+                "F#",
+                "Java",
+                "C / C++",
+                "Go",
+                "Node.js",
+                "Swift"
+            ]
+        },
+        {
+            "name": "Tools  of the Trade",
+            "level": "Experienced",
+            "keywords": [
+                "git",
+                "subversion",
+                "team city",
+                "octopus",
+                "trello"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "German",
+            "fluency": "Nicht so gut!"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Open Source",
+            "keywords": [
+                "Software",
+                "Hardware"
+            ]
+        },
+        {
+            "name": "IoT",
+            "keywords": [
+                "Gadgeteer",
+                "mBed"
+            ]
+        },
+        {
+            "name": "Music",
+            "keywords": [
+                "Guitar",
+                "Writing",
+                "Recording"
+            ]
+        }
+
+    ],
+    "references": [
+       
+    ]
+}

@@ -218,4 +218,3 @@ pip-log.txt
 #smtp settings
 Website/Mail.config
 Website/posts/*
-Website/App_Data/resume.json
