@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Richard J. Leopold</title>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <style>
+            body {
+    font-family: 'Lato';
+    background: #F0F0F0;
+    color: #333;
+}
+
+.main {
+	padding: 5px;
+}
+
+.card {
+	background: white;
+	border: 1px solid #E6E6E6;
+    border-radius: 3px;
+    min-height: 300px;
+    padding: 10px;
+}
+
+.card-nested {
+    min-height: 0;
+    margin-bottom: 10px;
+    border-width: 1px 0 0 0;
+}
+
+.card-work-experience:last-child {
+    margin-bottom: 0;
+}
+
+.background-card {
+    padding: 10px 20px;
+}
+
+.card-wrapper {
+    padding: 5px;
+}
+
+.profile-pic {
+    padding: 20px 0;
+}
+
+.text-bolder {
+    font-weight: bold;
+}
+
+.contact-details .detail {
+    display: table;
+    padding: 10px 0;
+}
+
+.contact-details .detail .icon {
+    padding: 0 10px;
+    color: #707070;
+}
+
+.contact-details .detail .icon, .contact-details .detail .info {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.contact-details .detail .info{
+	font-size: 0.8em;
+}
+
+.social-link {
+	margin-left: 5px;
+}
+
+.social-link:first-child {
+	margin-left: 0;
+}
+
+.social-link:hover {
+	text-decoration: none;
+}
+
+.link-github {
+	color: #454545;
+}
+
+.link-github:hover {
+    color: black;
+}
+
+.link-twitter {
+    color: #33CCFF;
+}
+
+.link-blog {
+	color: rgb(243, 111, 36);
+}
+
+.link-blog:hover {
+	color: rgb(211, 97, 32);
+}
+
+.background-details .detail {
+	display: table;
+	padding: 10px 0;
+}
+
+.background-details .detail .icon {
+	min-width: 45px;
+	max-width: 45px;
+	text-align: center;
+}
+
+.background-details .detail .title, .background-details .detail .icon {
+	color: # 707070;
+}
+
+.background-details .detail .icon,
+.background-details .detail .info {
+    display: table-cell;
+    padding: 0 10px;
+}
+
+.background-details .detail .info {
+    width: 100% ;
+}
+
+.timeline-circle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #e2e2e2;
+    border-radius: 50% ;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.timeline-content {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.clear-margin {
+    margin: 0;
+}
+
+.space-top {
+    margin-top: 10px;
+}
+
+.info .content.has-sidebar {
+    width: 80% ;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 10px;
+}
+
+.info .sidebar {
+    margin-left: 80% ;
+    box-sizing: border-box;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <script>
+            window.onload = function () {
+                $(".background-card").css( "min-height", window.screen.availHeight + "px" );
+            }
+        </script>
+        <div class="container-fluid">
+            <div class="row main clearfix">
+                <section class="col-md-3 card-wrapper affix">
+                    <div class="card profile-card">
+                        <div class="profile-pic">
+                            <img class="media-object img-circle center-block"  data-src="holder.js/64x64"
+                                alt="64x64" src="http://www.gravatar.com/avatar/dafc7b515d2ac556ab36f0ffd50a09f6?s=100&amp;r=pg&amp;d=mm" style="width: 100px; height: 100px;">
+                        </div>
+                        
+                            <h3 class="text-center text-bolder"> Richard J. Leopold</h3>
+                            <h5 class="text-muted text-center">Developer / Architect</h5>
+                            <hr>
+
+                            <div class="contact-details clearfix">
+
+                                
+                                    <div class="detail">
+                                        <span class="icon">
+                                            <i class="fa fa-lg fa-location-arrow"></i>
+                                        </span>
+
+                                        
+                                            <span class="info">
+                                                Dallas, Texas,
+                                                US
+                                            </span>
+                                        
+                                    </div>
+                                
+
+                                
+                                    <div class="detail">
+                                        <span class="icon">
+                                            <i class="fa fa-lg fa-phone"></i>
+                                        </span>
+
+                                        <span class="info">
+                                            (214) 558-4123
+                                        </span>
+                                    </div>
+                                
+
+                                
+                                    <div class="detail">
+                                        <span class="icon">
+                                            <i class="fa fa-lg fa-envelope"></i>
+                                        </span>
+
+                                        <span class="info">
+                                            rjleopold@gmail.com
+                                        </span>
+                                    </div>
+                                
+
+                                
+                                    <div class="detail">
+                                        <span class="icon" title="Languages I speak">
+                                            <i class="fa fa-lg fa-language"></i>
+                                        </span>
+
+                                        <span class="info">
+                                            English, German
+                                        </span>
+                                    </div>
+                                
+                            </div>
+
+                            <hr>
+
+                            <div class="social-links text-center">
+                                
+                                    <a class="fa fa-github fa-2x social-link link-github"
+                                           href="http://www.github.com/rleopold" target="_blank"></a>
+                                
+                                
+                                    <a class="fa fa-twitter fa-2x social-link link-twitter"
+                                           href="http://www.twitter.com/rjleopold" target="_blank"></a>
+                                
+                                
+                                    <a class="fa fa-rss fa-2x social-link link-blog"
+                                           href="http://4rjl.net" target="_blank"></a>
+                                
+                            </div>
+                        
+                    </div>
+                </section>
+
+                <section class="col-md-9 card-wrapper pull-right">
+                    <div class="card background-card">
+                        <h4 class="text-uppercase text-bolder">Background</h4>
+                        <hr>
+
+                        <div class="background-details">
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-user"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        About
+                                    </h4>
+
+                                    <div class="content">
+                                        I wrote my first piece of software in 1986 on my father&#x27;s Apple IIe, and I have never looked back. My philosophy on software is that it is more art than science, and that the best solutions don&#x27;t come from books about design patterns and such, but the natural creative process backed up by technical expertise and experience. I am a problem solver by nature, a leader by example, and an eager student.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-building"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Work Experience
+                                    </h4>
+
+                                    <ul class="list-unstyled">
+                                        
+                                            <li class="card card-nested clearfix">
+                                                <div class="content has-sidebar">
+                                                    <p><strong>Founder / Chief Architect / Principal Consultant</strong>,&nbsp;BizHeard</p>
+                                                    <p>Wearing all the hats at a bootstrapping startup!</p>
+                                                    
+                                                        <ul>
+                                                            
+                                                                <li> Designed and developed the web and mobile backend for BizHeard&#x27;s product </li>
+                                                            
+                                                                <li> Provided consulting services for BizHeard&#x27;s clients </li>
+                                                            
+                                                                <li> vPromos - Designed and developed software for a SaaS customer loyalty application </li>
+                                                            
+                                                        </ul>
+                                                    
+                                                </div>
+
+                                                <div class="sidebar text-muted text-center">
+                                                    <p>
+                                                        <strong>Joined:</strong>&nbsp;
+                                                        Mar, 2013
+                                                    </p>
+                                                    <p>
+                                                        
+                                                            <strong>Left:</strong>&nbsp;
+                                                            Sep, 2014
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        (1 year 5 months)
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        
+                                            <li class="card card-nested clearfix">
+                                                <div class="content has-sidebar">
+                                                    <p><strong>President / Principal Consultant</strong>,&nbsp;Powerhouse Software Inc.</p>
+                                                    <p>Providing .NET Consulting services to clients</p>
+                                                    
+                                                        <ul>
+                                                            
+                                                                <li> Horizontal Solutions International - Created cloud-based application for managing geological data </li>
+                                                            
+                                                                <li> Lateral Software Services - Created cloud-based geosteering application for lateral drilling control </li>
+                                                            
+                                                                <li> Gydex - Helped to design and build out a real-tme operations center for petroleum drilling and production activity </li>
+                                                            
+                                                        </ul>
+                                                    
+                                                </div>
+
+                                                <div class="sidebar text-muted text-center">
+                                                    <p>
+                                                        <strong>Joined:</strong>&nbsp;
+                                                        Mar, 2007
+                                                    </p>
+                                                    <p>
+                                                        
+                                                            <strong>Left:</strong>&nbsp;
+                                                            Sep, 2014
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        (7 years 5 months)
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        
+                                            <li class="card card-nested clearfix">
+                                                <div class="content has-sidebar">
+                                                    <p><strong>Producer / Analyst / Developer</strong>,&nbsp;Brierley and Partners</p>
+                                                    <p>Creating content deliverables, analysis and development for B+P&#x27;s largest clients</p>
+                                                    
+                                                        <ul>
+                                                            
+                                                                <li> Sony Rewards - Designed and developed the customer service application for the Sony Rewards and Sony Card programs </li>
+                                                            
+                                                                <li> Ann Taylor Loft - Created dynamic email content for members based upon CRM data for customers </li>
+                                                            
+                                                                <li> Nokia - Provided QA for web and email deliverables </li>
+                                                            
+                                                        </ul>
+                                                    
+                                                </div>
+
+                                                <div class="sidebar text-muted text-center">
+                                                    <p>
+                                                        <strong>Joined:</strong>&nbsp;
+                                                        Apr, 2004
+                                                    </p>
+                                                    <p>
+                                                        
+                                                            <strong>Left:</strong>&nbsp;
+                                                            Mar, 2007
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        (2 years 11 months)
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        
+                                            <li class="card card-nested clearfix">
+                                                <div class="content has-sidebar">
+                                                    <p><strong>Java Developer</strong>,&nbsp;Database Designs LLC</p>
+                                                    <p>Created online truck brokerage software</p>
+                                                    
+                                                        <ul>
+                                                            
+                                                                <li> Used java servlets to implement a web-based communication layer with desktop app </li>
+                                                            
+                                                        </ul>
+                                                    
+                                                </div>
+
+                                                <div class="sidebar text-muted text-center">
+                                                    <p>
+                                                        <strong>Joined:</strong>&nbsp;
+                                                        Apr, 1999
+                                                    </p>
+                                                    <p>
+                                                        
+                                                            <strong>Left:</strong>&nbsp;
+                                                            Apr, 2000
+                                                        
+                                                    </p>
+                                                    <p>
+                                                        (1 year)
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-code"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Skills
+                                    </h4>
+
+                                    <div class="content">
+                                        <ul class="list-unstyled">
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>.NET</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">ASP.NET</span>
+                                                        
+                                                            <span class="label label-primary">C#</span>
+                                                        
+                                                            <span class="label label-primary">Visual Studio</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Web</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">AngularJS</span>
+                                                        
+                                                            <span class="label label-primary">Javascript</span>
+                                                        
+                                                            <span class="label label-primary">HTML5</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Data</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">SQL Server</span>
+                                                        
+                                                            <span class="label label-primary">Entity Framework</span>
+                                                        
+                                                            <span class="label label-primary">MongoDb</span>
+                                                        
+                                                            <span class="label label-primary">Azure Tables</span>
+                                                        
+                                                            <span class="label label-primary">Data Storage Architecture</span>
+                                                        
+                                                            <span class="label label-primary">DocumentDb</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Other Languages / Platforms</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">F#</span>
+                                                        
+                                                            <span class="label label-primary">Java</span>
+                                                        
+                                                            <span class="label label-primary">C / C++</span>
+                                                        
+                                                            <span class="label label-primary">Go</span>
+                                                        
+                                                            <span class="label label-primary">Node.js</span>
+                                                        
+                                                            <span class="label label-primary">Swift</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                                <li class="card card-nested">
+                                                    <strong>Tools  of the Trade</strong>
+
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">git</span>
+                                                        
+                                                            <span class="label label-primary">subversion</span>
+                                                        
+                                                            <span class="label label-primary">team city</span>
+                                                        
+                                                            <span class="label label-primary">octopus</span>
+                                                        
+                                                    </div>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail">
+                                <div class="icon">
+                                    <i class="fa fa-lg fa-mortar-board"></i>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title text-uppercase">
+                                        Education
+                                    </h4>
+
+                                    <div class="content">
+                                        <ul class="list-unstyled">
+                                            
+                                                <li class="card card-nested">
+                                                    <p>
+                                                        <strong>Computer Science / Information Technology, Bachelor</strong>,&nbsp;
+                                                        Texas Tech University
+                                                        <small class="text-muted pull-right">
+                                                            1998-09-01 - 2002-12-01
+                                                        </small>
+                                                    </p>
+                                                    <div class="space-top">
+                                                        
+                                                            <span class="label label-primary">Music</span>
+                                                        
+                                                            <span class="label label-primary">Math</span>
+                                                        
+                                                            <span class="label label-primary">Computer Science</span>
+                                                        
+                                                            <span class="label label-primary">Information Technology</span>
+                                                        
+                                                    </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            
+
+                            
+
+                            
+                                <div class="detail">
+                                    <div class="icon">
+                                        <i class="fa fa-lg fa-heart"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h4 class="title text-uppercase">
+                                            Interests
+                                        </h4>
+
+                                        <div class="content">
+                                            <ul class="list-unstyled">
+                                                
+                                                    <li class="card card-nested">
+                                                        <p>
+                                                            <strong>Open Source</strong>
+                                                        </p>
+
+                                                        <div class="space-top">
+                                                            
+                                                                <span class="label label-primary">Software</span>
+                                                            
+                                                                <span class="label label-primary">Hardware</span>
+                                                            
+                                                        </div>
+                                                    </li>
+                                                
+                                                    <li class="card card-nested">
+                                                        <p>
+                                                            <strong>IoT</strong>
+                                                        </p>
+
+                                                        <div class="space-top">
+                                                            
+                                                                <span class="label label-primary">Gadgeteer</span>
+                                                            
+                                                                <span class="label label-primary">mBed</span>
+                                                            
+                                                        </div>
+                                                    </li>
+                                                
+                                                    <li class="card card-nested">
+                                                        <p>
+                                                            <strong>Music</strong>
+                                                        </p>
+
+                                                        <div class="space-top">
+                                                            
+                                                                <span class="label label-primary">Playing (Guitar)</span>
+                                                            
+                                                                <span class="label label-primary">Writing</span>
+                                                            
+                                                                <span class="label label-primary">Recording</span>
+                                                            
+                                                        </div>
+                                                    </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+
+                            
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </body>
+</html>

@@ -13,12 +13,22 @@ public class ResumeHandler : IHttpHandler
 
     public void ProcessRequest(HttpContext context)
     {
-        var s = GetJsonResume(context.Server.MapPath("~/App_Data/resume.json"));
-        context.Response.ContentType = "application/json";
-        context.Response.Write(s);
+        string content; 
+        if (context.Request.HttpMethod == "POST")
+        {
+            content = GetResumeContent(context.Server.MapPath("~/App_Data/resume.json"));
+            context.Response.ContentType = "application/json";
+        }
+        else //GET
+        {
+            content = GetResumeContent(context.Server.MapPath("~/App_Data/resume.html"));
+            context.Response.ContentType = "text/html";
+        }
+
+        context.Response.Write(content);
     }
 
-    private string GetJsonResume(string path)
+    private string GetResumeContent(string path)
     {
         //get file and return some json OR maybe use azure storage etc. etc.
         string result;
