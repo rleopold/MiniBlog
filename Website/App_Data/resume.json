@@ -29,6 +29,20 @@
     },
     "work": [
         {
+            "company": "Powerhouse Software Inc.",
+            "position": "Principal Consultant",
+            "website": "http://powerhousesoftware.com",
+            "startDate": "2007-04-01",
+            "endDate": "2015-03-15",
+            "summary": "Providing .NET Consulting services to clients",
+            "highlights": [
+                "Horizontal Solutions International - Created cloud-based application for managing geological data",
+                "Lateral Software Services - Created cloud-based geosteering application for lateral drilling control",
+                "Gydex - Helped to design and build out a real-time operations center for petroleum drilling and production activity",
+                "Gamestop - Worked to implement SCRUM methodology and develop their next generation web/mobile products"
+            ]
+        },
+        {
             "company": "BizHeard",
             "position": "Founder / Chief Architect / Principal Consultant",
             "website": "http://bizheard.net",
@@ -42,25 +56,12 @@
             ]
         },
         {
-            "company": "Powerhouse Software Inc.",
-            "position": "Principal Consultant",
-            "website": "http://powerhousesoftware.com",
-            "startDate": "2007-04-01",
-            "endDate": "2014-09-15",
-            "summary": "Providing .NET Consulting services to clients",
-            "highlights": [
-                "Horizontal Solutions International - Created cloud-based application for managing geological data",
-                "Lateral Software Services - Created cloud-based geosteering application for lateral drilling control",
-                "Gydex - Helped to design and build out a real-time operations center for petroleum drilling and production activity"
-            ]
-        },
-        {
             "company": "Brierley and Partners",
             "position": "Producer / Analyst / Developer",
             "website": "http://brierley.net",
             "startDate": "2004-05-01",
             "endDate": "2007-04-01",
-            "summary": "Creating content deliverables, analysis and development for B+P's largest clients",
+            "summary": "Creating content deliverables, analysis, and development for B+P's largest clients",
             "highlights": [
                 "Sony Rewards - Designed and developed the customer service application for the Sony Rewards and Sony Card programs",
                 "Ann Taylor Loft - Created dynamic email content for members based upon CRM data for customers",
@@ -109,7 +110,7 @@
                 "WCF",
                 "LINQ",
                 "Visual Studio"
-                
+
             ]
         },
         {
@@ -117,12 +118,23 @@
             "level": "Master",
             "keywords": [
                 "AngularJS",
+                "Aurelia",
                 "Javascript",
                 "HTML5",
                 "bootstrap",
                 "jQuery",
                 "REST",
-                "grunt"
+                "grunt",
+                "gulp",
+                "jspm"
+            ]
+        },
+        {
+            "name": "Cloud",
+            "level": "Master",
+            "keywords": [
+                "Azure",
+                "AWS"
             ]
         },
         {
@@ -148,7 +160,8 @@
                 "Go",
                 "Node.js",
                 "Swift",
-                "Xamarin"
+                "Xamarin",
+                "Aurelia"
             ]
         },
         {
@@ -190,7 +203,8 @@
             "name": "IoT",
             "keywords": [
                 "Gadgeteer",
-                "mBed"
+                "mBed",
+                "Rasberry Pi"
             ]
         },
         {
