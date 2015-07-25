@@ -14,7 +14,7 @@
         xHtmlDocument.importNode(htmlDocument.body, true);
         xhtmlBody.appendChild(htmlDocument.body.firstChild);
 
-        /<body.*?><div>(.*?)<\/div><\/body>/im.exec(xHtmlDocument.documentElement.innerHTML);
+        /<body.*?><div>([\s\S]*?)<\/div><\/body>/i.exec(xHtmlDocument.documentElement.innerHTML);
         return RegExp.$1;
     }
 
@@ -27,7 +27,7 @@
     editPost = function () {
         txtTitle.attr('contentEditable', true);
         txtExcerpt.attr('contentEditable', true);
-		txtExcerpt.css({ minHeight: "100px" });
+        txtExcerpt.css({ minHeight: "100px" });
         txtExcerpt.parent().css('display', 'block');
         txtContent.wysiwyg({ hotKeys: {}, activeToolbarClass: "active" });
         txtContent.css({ minHeight: "400px" });
@@ -50,22 +50,9 @@
             if (confirm("Do you want to leave this page?")) {
                 history.back();
             }
-        } else {
-            txtTitle.removeAttr('contentEditable');
-            txtExcerpt.removeAttr('contentEditable');
-            txtExcerpt.parent().css('display', 'none');
-            txtContent.removeAttr('contentEditable');
-            btnCancel.focus();
-
-            btnNew.removeAttr("disabled");
-            btnEdit.removeAttr("disabled");
-            btnSave.attr("disabled", true);
-            btnCancel.attr("disabled", true);
-            chkPublish.attr("disabled", true);
-
-            showCategoriesForDisplay();
-
-            $("#tools").fadeOut();
+        } else
+        {
+            window.location = window.location.href.split(/\?|#/)[0];
         }
     },
     toggleSourceView = function () {
@@ -198,7 +185,7 @@
     txtImage = $("#admin #txtImage");
 
     btnNew = $("#btnNew");
-    btnEdit = $("#btnEdit").bind("click", editPost);
+    btnEdit = $("#btnEdit");
     btnDelete = $("#btnDelete").bind("click", deletePost);
     btnSave = $("#btnSave").bind("click", savePost);
     btnCancel = $("#btnCancel").bind("click", cancelEdit);
@@ -227,8 +214,15 @@
         $("#ispublished").fadeIn();
         chkPublish[0].checked = true;
     } else if (txtTitle !== null && txtTitle.length === 1 && location.pathname.length > 1) {
+        if (location.search.indexOf("mode=edit") != -1)
+            editPost();
+
         btnEdit.removeAttr("disabled");
         btnDelete.removeAttr("disabled");
         $("#ispublished").css({ "display": "inline" });
     }
+
+    $(".dropdown-menu > input").click(function (e) {
+        e.stopPropagation();
+    });
 })(jQuery);

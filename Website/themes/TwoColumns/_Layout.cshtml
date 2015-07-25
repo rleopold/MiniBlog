@@ -1,21 +1,20 @@
 ﻿@{
-	string next = Blog.GetNextPage();
-	string prev = Blog.GetPrevPage();
+    string next = Blog.GetNextPage();
+    string prev = Blog.GetPrevPage();
 }
 <!doctype html>
 <html lang="en-us">
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8" />
     <title>@Page.Title</title>
-    <meta name="description" content="@Blog.Description" />
+    <meta name="description" content="@Page.Description" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <script src="~/scripts/jquery-2.0.2.js"></script>
+
     <link type="application/rsd+xml" rel="edituri" title="RSD" href="~/views/robots/rsd" />
     <link type="application/rss+xml" rel="alternate" title="@Blog.Title" href="~/feed/rss/" />
     <link type="application/atom+xml" rel="alternate" title="@Blog.Title" href="~/feed/atom/" />
-    
-    <link rel="stylesheet" href="@Blog.FingerPrint("/css/bootstrap-3.0.0.css", "//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")" />
 
+    <link rel="stylesheet" href="@Blog.FingerPrint("/Content/bootstrap.css", "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")" />
     <link rel="stylesheet" href="@Blog.FingerPrint("/themes/" + Blog.Theme + "/site.css")" />
 
     <link href="~/css/shCore.css" rel="stylesheet" />
@@ -34,20 +33,19 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="@(Request.Url.Scheme +"://" + Request.Url.Authority + Request.RawUrl)" />
     @if (!string.IsNullOrEmpty(prev))
-	{
-		<link rel="prev" href="@prev" />
-	}
-	@if (!string.IsNullOrEmpty(next))
-	{
-		<link rel="next" href="@next" />
-	}
+    {
+        <link rel="prev" href="@prev" />
+    }
+    @if (!string.IsNullOrEmpty(next))
+    {
+        <link rel="next" href="@next" />
+    }
     <style>
         body {
             padding-top: 70px;
         }
     </style>
 </head>
-
 <body itemscope itemtype="http://schema.org/Blog" class="@(User.Identity.IsAuthenticated ? "admin": null)">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
@@ -77,59 +75,60 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catagories <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            @foreach (var cat in Blog.GetCategories().OrderByDescending(p=>p.Value))
+                            @foreach (var cat in Blog.GetCategories().OrderByDescending(p => p.Value))
                             {
                                 <li><a href="~/category/@HttpUtility.UrlEncode(cat.Key.ToLowerInvariant())">@cat.Key (@cat.Value)</a></li>
                             }
                         </ul>
                     </li>
-                    <li><a href="https://github.com/rleopold" >github</a></li>
+                    <li><a href="https://github.com/rleopold">github</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                        <li><a href="@FormsAuthentication.LoginUrl?ReturnUrl=@Request.RawUrl">Sign in <i class="glyphicon glyphicon-log-in"></i></a></li>
+                    <li><a href="@FormsAuthentication.LoginUrl?ReturnUrl=@Request.RawUrl">Sign in <i class="glyphicon glyphicon-log-in"></i></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
         <header role="banner">
-            <span itemprop="name"><a href="~/" itemprop="url">@Blog.Title</a></span><br />
+            <span><a href="~/" itemprop="url">@Blog.Title</a></span><br />
             <em>@Blog.Description</em>
         </header>
-        
+
+
         <div class="row">
-        <div role="main" class="col-md-9">
-            @RenderBody()
+            <div role="main" class="col-md-9">
+                @RenderBody()
 
-            @if (Page.ShowPaging != null)
-            {
-                <ul class="pager">
-                    @if (Blog.GetPosts().Count() > Blog.PostsPerPage * Blog.CurrentPage)
-                    {
-                        <li class="previous"><a href="@Blog.GetPagingUrl(1)" rel="prev">&larr; Older</a></li>
-                    }
+                @if (Page.ShowPaging != null)
+                {
+                    <ul class="pager">
+                        @if (Blog.GetPosts().Count() > Blog.PostsPerPage * Blog.CurrentPage)
+                        {
+                            <li class="previous"><a href="@Blog.GetPagingUrl(1)" rel="prev">&larr; Older</a></li>
+                        }
 
-                    @if (Blog.CurrentPage > 1)
-                    {
-                        <li class="next"><a href="@Blog.GetPagingUrl(-1)" rel="next">Newer &rarr;</a></li>
-                    }
-                </ul>
-            }
-        </div>
-
-        <aside role="complementary" class="col-md-3">
-            <section>
-                <img src="https://bhnet.blob.core.windows.net/images/e8d5c162-0280-4ae9-8eff-e5a34186d173glasshole.png" class="img-rounded" />
-                <h3>Richard J. Leopold</h3>
-                <p>
-                    Richard wrote his first piece of software in 1986 on his father's Apple IIe, and has never looked back. His philosophy on software is that it is more art than science, and that the best solutions don't come from books about design patterns and such, but the natural creative process backed up by technical expertise and experience.
-                </p>
-                <p>
-                    Richard has 15 years of professional experience and studied music, math and computer science while completing a BBA in Information Systems from the Jerry S. Rawls College of Business Administration at Texas Tech University
-                </p>
-            </section>
-        </aside>
+                        @if (Blog.CurrentPage > 1)
+                        {
+                            <li class="next"><a href="@Blog.GetPagingUrl(-1)" rel="next">Newer &rarr;</a></li>
+                        }
+                    </ul>
+                }
             </div>
+
+            <aside role="complementary" class="col-md-3">
+                <section>
+                    <img src="https://bhnet.blob.core.windows.net/images/e8d5c162-0280-4ae9-8eff-e5a34186d173glasshole.png" class="img-rounded" />
+                    <h3>Richard J. Leopold</h3>
+                    <p>
+                        Richard wrote his first piece of software in 1986 on his father's Apple IIe, and has never looked back. His philosophy on software is that it is more art than science, and that the best solutions don't come from books about design patterns and such, but the natural creative process backed up by technical expertise and experience.
+                    </p>
+                    <p>
+                        Richard has 15 years of professional experience and studied music, math and computer science while completing a BBA in Information Systems from the Jerry S. Rawls College of Business Administration at Texas Tech University
+                    </p>
+                </section>
+            </aside>
+        </div>
     </div>
 
     <footer class="text-center" role="contentinfo" itemscope itemtype="http://schema.org/Person" itemprop="author">
@@ -158,7 +157,6 @@
 
 </body>
 </html>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="~/scripts/shCore.js"></script>
 <script src="~/scripts/shBrushCSharp.js"></script>
 <script src="~/scripts/shBrushXml.js"></script>
@@ -183,11 +181,10 @@
     ga('send', 'pageview');
 
 </script>
-
 @helper AdminCss()
 {
     if (User.Identity.IsAuthenticated)
     {
-        <link href="@Blog.FingerPrint("/css/admin.css")" rel="stylesheet" />
+        <link href="@Blog.FingerPrint("/Content/admin.css")" rel="stylesheet" />
     }
 }
